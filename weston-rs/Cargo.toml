@@ -1,0 +1,17 @@
+[package]
+name = "weston-rs"
+version = "0.0.0"
+authors = [ "Greg V <greg@unrelenting.technology>" ]
+keywords = [ "Weston", "Wayland", "Compositor" ]
+description = "Rust wrapper around libweston (with libweston-desktop), the reference Wayland compositor library"
+license = "MIT"
+homepage = "https://github.com/myfreeweb/weston-rs"
+repository = "https://github.com/myfreeweb/weston-rs"
+
+[dependencies]
+libweston-sys = { path = "../libweston-sys" }
+wayland-sys = { version = "0", features = ["client", "cursor", "egl", "server"] }
+libc = "0.2"
+vsprintf = "1"
+const-cstr = "0"
+memoffset = "0"
